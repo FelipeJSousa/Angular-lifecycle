@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon'
 import { MatSelectModule } from '@angular/material/select'
 import { MatButtonModule } from '@angular/material/button'
 import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatListModule } from '@angular/material/list'
 
 import { AppComponent } from './app.component';
 import { MainCycleComponent } from './main-cycle/main-cycle.component';
@@ -27,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule, 
     MatFormFieldModule,
     FormsModule,
+    MatListModule,
     BrowserAnimationsModule
   ],
   providers: [],
