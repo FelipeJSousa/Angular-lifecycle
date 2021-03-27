@@ -34,7 +34,7 @@
          <mat-list>
              <mat-list-item *ngFor="let c of clients">
                 <mat-icon mat-list-icon>person</mat-icon>
-                <app-lifecycle-child [name]="c.name" [age]="c.age" [food]="c.food"></app-lifecycle-child>
+                <app-child-cycle [name]="c.name" [age]="c.age" [food]="c.food"></app-child-cycle>
                 <button mat-icon-button>
                     <mat-icon>edit</mat-icon>
                 </button>
