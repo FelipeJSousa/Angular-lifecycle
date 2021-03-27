@@ -7,19 +7,16 @@ import { MatIconModule } from '@angular/material/icon'
 import { MatSelectModule } from '@angular/material/select'
 import { MatButtonModule } from '@angular/material/button'
 import { MatFormFieldModule } from '@angular/material/form-field'
-import { MatListModule } from '@angular/material/list'
 
 import { AppComponent } from './app.component';
 import { MainCycleComponent } from './main-cycle/main-cycle.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { lifecycleChildComponent } from './main-cycle/lifecycle-child/lifecycle-child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainCycleComponent,
-    lifecycleChildComponent
+    MainCycleComponent
   ],
   imports: [
     BrowserModule,
@@ -30,8 +27,7 @@ import { lifecycleChildComponent } from './main-cycle/lifecycle-child/lifecycle-
     MatButtonModule, 
     MatFormFieldModule,
     FormsModule,
-    BrowserAnimationsModule, 
-    MatListModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
