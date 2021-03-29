@@ -16,13 +16,17 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChildCycleComponent } from './main-cycle/child-cycle/child-cycle.component';
 import { GrandChildCycleComponent } from './main-cycle/child-cycle/grand-child-cycle/grand-child-cycle.component';
+import { CheckComponent } from './check/check.component';
+import { CheckChildComponent } from './check/check-child/check-child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainCycleComponent,
     ChildCycleComponent,
-    GrandChildCycleComponent
+    GrandChildCycleComponent,
+    CheckComponent,
+    CheckChildComponent
   ],
   imports: [
     BrowserModule,
