@@ -25,20 +25,20 @@
           <mat-icon>check</mat-icon>
         </button>
 
-        <button mat-icon-button color="primary" >
+        <button mat-icon-button color="primary" (click)="clear()">
           <mat-icon>refresh</mat-icon>
         </button>
       </section>
 
       <section>
         <mat-list>
-            <mat-list-item *ngFor="let c of clients">
+            <mat-list-item *ngFor="let c of clients; let i=index">
               <mat-icon mat-list-icon>person</mat-icon>
               <app-child-cycle [name]="c.name" [age]="c.age" [food]="c.food" #child mat-line></app-child-cycle>
-              <button mat-icon-button>
+              <button mat-icon-button (click)="edit(i)">
                 <mat-icon >edit</mat-icon>
               </button>
-              <button mat-icon-button>
+              <button mat-icon-button (click)="delete(i)">
                 <mat-icon >delete</mat-icon>
               </button>
               <p mat-line>

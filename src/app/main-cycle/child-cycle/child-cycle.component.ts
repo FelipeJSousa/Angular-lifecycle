@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, SimpleChange, OnChanges ,OnDestroy, AfterContentInit} from '@angular/core';
+import { Client } from 'src/app/client.model';
 
 @Component({
   selector: 'app-child-cycle',
@@ -58,6 +59,7 @@ export class ChildCycleComponent implements OnInit, OnChanges, OnDestroy, AfterC
         this.events.splice(idx, 1);
     },3000 + this.events.length*1000)
   }
+
 
 }
 
