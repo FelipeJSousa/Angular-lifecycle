@@ -16,11 +16,18 @@ export class MainCycleComponent implements OnInit {
   foods: string[] = ['Rice', 'Beans', 'Pizza'];
   private _onEditClient : number = -1;
 
+  private _randomNumber : number;
+  
   constructor() { 
     console.log(this.foods);
   }
 
   ngOnInit(): void {
+    this.generateRandomNumber();
+  }
+
+  generateRandomNumber() {
+    this._randomNumber= Math.round(Math.random()*1000);
   }
 
   save(){

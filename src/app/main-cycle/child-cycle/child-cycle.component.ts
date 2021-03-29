@@ -39,6 +39,12 @@ export class ChildCycleComponent implements OnInit, OnChanges, OnDestroy, AfterC
   ngOnChanges(changes: {[propKey : string] : SimpleChange}){
     console.log(`OnChanges: ${this.name} - ${this.age} - ${this.food}`)
     this.newEvent("OnChanges");
+    let logChanges = "Alterações: ";
+    for(let prop in changes){
+      logChanges += `${prop} - `
+    }
+    console.log(logChanges);
+    
   }
   
   ngOnDestroy(){

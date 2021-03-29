@@ -15,12 +15,14 @@ import { MainCycleComponent } from './main-cycle/main-cycle.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChildCycleComponent } from './main-cycle/child-cycle/child-cycle.component';
+import { GrandChildCycleComponent } from './main-cycle/child-cycle/grand-child-cycle/grand-child-cycle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainCycleComponent,
-    ChildCycleComponent
+    ChildCycleComponent,
+    GrandChildCycleComponent
   ],
   imports: [
     BrowserModule,
