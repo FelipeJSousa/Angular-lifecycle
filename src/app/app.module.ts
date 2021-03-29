@@ -9,6 +9,8 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatListModule } from '@angular/material/list'
 import { MatChipsModule } from '@angular/material/chips'
+import { MatSlideToggleModule } from '@angular/material/slide-toggle'
+import { MatDividerModule } from '@angular/material/divider'
 
 import { AppComponent } from './app.component';
 import { MainCycleComponent } from './main-cycle/main-cycle.component';
@@ -39,7 +41,9 @@ import { CheckChildComponent } from './check/check-child/check-child.component';
     FormsModule,
     MatListModule,
     BrowserAnimationsModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSlideToggleModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
