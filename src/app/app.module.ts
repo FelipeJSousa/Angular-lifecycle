@@ -8,6 +8,7 @@ import { MatSelectModule } from '@angular/material/select'
 import { MatButtonModule } from '@angular/material/button'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatListModule } from '@angular/material/list'
+import { MatChipsModule } from '@angular/material/chips'
 
 import { AppComponent } from './app.component';
 import { MainCycleComponent } from './main-cycle/main-cycle.component';
@@ -31,7 +32,8 @@ import { ChildCycleComponent } from './main-cycle/child-cycle/child-cycle.compon
     MatFormFieldModule,
     FormsModule,
     MatListModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
